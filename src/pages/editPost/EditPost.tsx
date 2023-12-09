@@ -49,7 +49,7 @@ const EditPost = () => {
     return;
   }
 
-  const imageUrl = `${config.SERVER_URL}/foodImages/${post.image}`;
+  const imageUrl = post.image;
   const token = localStorage.getItem('token');
   if (!token) {
     console.error('No token available. Please log in.');

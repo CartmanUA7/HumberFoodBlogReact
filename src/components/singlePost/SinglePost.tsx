@@ -35,7 +35,7 @@ const SinglePost = () =>{
     return;
   }
 
-  const imageUrl = `${config.SERVER_URL}/foodImages/${post.image}`;
+  const imageUrl = post.image;
   const parsedDate = new Date(post.postTime).toLocaleString();
 
   const handleLike = async () => {

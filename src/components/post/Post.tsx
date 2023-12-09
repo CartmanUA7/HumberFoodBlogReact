@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import './post.css';
 import { PostType } from '../../models/Post';
-import config from '../../../config';
 
 interface PostProps {
   data: PostType;
@@ -10,7 +9,7 @@ interface PostProps {
 
 const Post = (props: PostProps) => {
   const { data } = props;
-  const imageUrl = `${config.SERVER_URL}/foodImages/${data.image}`;
+  const imageUrl = data.image;
   const parsedDate = new Date(data.postTime).toLocaleString();
 
   return (
