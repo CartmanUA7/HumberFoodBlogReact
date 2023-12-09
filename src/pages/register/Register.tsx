@@ -45,7 +45,7 @@ const Register = () => {
     const namePattern = /^[A-Za-z]+$/;
 
     // Regular expression pattern for a special character
-    const specialCharacterPattern = /[@#$%^&+=]/;
+    //const specialCharacterPattern = /[@#$%^&+=]/;
 
     // Basic client-side validation
     if (!firstName) {
